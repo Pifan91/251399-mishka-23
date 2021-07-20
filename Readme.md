@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Николай Епифанов](https://up.htmlacademy.ru/adaptive/23/user/251399).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан](https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
