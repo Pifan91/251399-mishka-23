@@ -9,11 +9,24 @@
 </head>
 
 <body>
-  <header class="main-header main-header--no-js">
+  <svg width="0" height="0" class="visually-hidden">
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="search">
+      <path opacity=".2"
+        d="M17.693 16.057l-3.477-3.477c1.023-1.33 1.534-2.966 1.534-4.705C15.75 3.477 12.273 0 7.875 0S0 3.477 0 7.875s3.477 7.875 7.875 7.875c1.739 0 3.375-.614 4.704-1.534l3.478 3.477c.204.205.409.307.818.307.614 0 1.125-.511 1.125-1.125 0-.204-.102-.511-.307-.818zM2.25 7.875c0-3.068 2.557-5.625 5.625-5.625S13.5 4.807 13.5 7.875 10.943 13.5 7.875 13.5 2.25 10.943 2.25 7.875z"
+        fill="#000"></path>
+    </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 18" id="cart">
+      <path opacity=".2"
+        d="M20.188 6.857h-3.55L13.188.381C12.985 0 12.58-.095 12.174.095s-.507.572-.304.953l3.145 5.81H5.783l3.145-5.81c.202-.381 0-.762-.305-.953-.406-.19-.811 0-1.014.286l-3.45 6.476H.812c-.406 0-.812.286-.812.762 0 .381.304.762.812.762h.202l.914 2.857c-.203.095-.305.286-.305.572 0 .38.305.666.71.666L4.058 18h12.884l1.725-5.524c.405 0 .71-.286.71-.667 0-.19-.102-.476-.304-.57l.912-2.858h.203c.406 0 .812-.286.812-.762 0-.476-.406-.762-.812-.762zm-4.565 9.62H5.073L3.854 12.38h13.087l-1.319 4.095zm1.623-5.525H3.348l-.812-2.666h15.522l-.812 2.666z"
+        fill="#000"></path>
+    </symbol>
+  </svg>
+
+  <header class="main-header">
     <div class="main-header__container container">
       <a class="main-header__logo logo">
         <picture>
-          <img width="86" height="35" src="img/mishka-logo-mobile.svg.svg" alt="Логотип магазина Мишка">
+          <img width="86" height="35" src="img/mishka-logo-mobile.svg" alt="Логотип магазина Мишка">
         </picture>
         <span class="visually-hidden">Логотип магазина Мишка</span>
       </a>
@@ -33,10 +46,20 @@
 
       <ul class="main-header__user-list user-list">
         <li class="user-list__item">
-          <a class="user-list__link user-list__link--search" href="#">Поиск по сайту</a>
+          <a class="user-list__link user-list__link--search" href="#">
+            <svg>
+              <use xlink:href="#search"></use>
+            </svg>
+            Поиск по сайту
+          </a>
         </li>
         <li class="user-list__item">
-          <a class="user-list__link user-list__link--cart" href="#">Корзина: пока пуста</a>
+          <a class="user-list__link user-list__link--cart" href="#">
+            <svg>
+              <use xlink:href="#cart"></use>
+            </svg>
+            Корзина: пока пуста
+          </a>
         </li>
       </ul>
 
@@ -56,18 +79,16 @@
   <main>
     <div class="page-header">
       <div class="container">
-        <h1 class="page-title page-title--index">Милые штуки ручной работы для дома</h1>
+        <h1 class="page-title page-title--index">Милые штуки ручной<br>работы для дома</h1>
 
-        <section class="category">
-          <ul class="category__list">
-            <li class="category__list-item">
-              <a class="category__list-link category__list-link--interior" href="#">Предметы интерьера</a>
-            </li>
-            <li class="category__list-item">
-              <a class="category-list__link category__list-link--toys" href="#">Детские игрушки</a>
-            </li>
-          </ul>
-        </section>
+        <ul class="category">
+          <li class="category__item">
+            <a class="category__link category__link--interior" href="#">Предметы интерьера</a>
+          </li>
+          <li class="category__item">
+            <a class="category__link category__link--toy" href="#">Детские игрушки</a>
+          </li>
+        </ul>
       </div>
     </div>
 
@@ -96,7 +117,7 @@
         </table>
 
         <picture class="feature__foto">
-          <img width="260" height="315" src="#" alt="Фотография изделия">
+          <img width="260" height="315" src="img/triple-set-mobile.png" alt="Фотография изделия">
         </picture>
 
         <p class="feature__price">Цена: 990 руб.</p>
@@ -111,22 +132,22 @@
 
         <ul class="about-list">
           <li class="about-list__item about-list__item--flower">
-            <p class="about-list__item-text">Экологически чистые материалы</p>
+            Экологически<br>чистые материалы
           </li>
           <li class="about-list__item about-list__item--money">
-            <p class="about-list__item-text">Скандинавский стиль по российской цене</p>
+            Скандинавский стиль<br>по российской цене
           </li>
           <li class="about-list__item about-list__item--like">
-            <p class="about-list__item-text">Увеличивает лайки на фотографиях</p>
+            Увеличивает лайки<br>на фотографиях
           </li>
           <li class="about-list__item about-list__item--ball">
-            <p class="about-list__item-text">Связано вручную с любовью и умилением</p>
+            Связано вручную<br>с любовью и умилением
           </li>
           <li class="about-list__item about-list__item--rocket">
-            <p class="about-list__item-text">Поддержка отечественного производителя</p>
+            Поддержка отечественного<br>производителя
           </li>
           <li class="about-list__item about-list__item--present">
-            <p class="about-list__item-text">Поставляется в подарочной упаковке</p>
+            Поставляется<br>в подарочной упаковке
           </li>
         </ul>
       </div>
@@ -138,27 +159,24 @@
 
         <ul class="feedback-list">
           <li class="feedback-list__item">
-            <blockquote class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и
-              игрушек в Мишке, и мои фотографии сразу стали
-              более стильными, а также набирают больше лайков!</blockquote>
+            <blockquote class="feedback__text">Я&nbsp;молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек
+              в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!</blockquote>
             <cite class="feedback__author">
               <b class="feedback__author-name">Анастасия Красильникова</b>
               <a class="feedback__author-login" href="#">@misssssiskras</a>
             </cite>
           </li>
           <li class="feedback-list__item">
-            <blockquote class="feedback__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила
-              аксессуаров и игрушек в Мишке, и мои фотографии сразу
-              стали более стильными, а также набирают больше лайков!</blockquote>
+            <blockquote class="feedback__text">Я&nbsp;сестра молодой мамы, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров
+              и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!</blockquote>
             <cite class="feedback__author">
               <b class="feedback__author-name">Анастасия Красильникова</b>
               <a class="feedback__author-login" href="#">@misssssiskras2</a>
             </cite>
           </li>
           <li class="feedback-list__item">
-            <blockquote class="feedback__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я
-              накупила аксессуаров и игрушек в Мишке, и мои
-              фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote>
+            <blockquote class="feedback__text">Я&nbsp;двоюродная сестра молодой мамы, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила
+              аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!</blockquote>
             <cite class="feedback__author">
               <b class="feedback__author-name">Елена Красильникова</b>
               <a class="feedback__author-login" href="#">@misssssiskras3</a>
@@ -166,16 +184,16 @@
           </li>
         </ul>
 
-        <div class="feedback-toggles">
-          <button class="feedback-toggles__button feedback-toggles__button--prev">
+        <div class="feedback__toggles">
+          <button class="feedback__toggles-button feedback__toggles-button--prev">
             <span class="visually-hidden">Предыдущий отзыв</span>
           </button>
-          <button class="feedback-toggles__button feedback-toggles__button--next">
+          <button class="feedback__toggles-button feedback__toggles-button--next">
             <span class="visually-hidden">Следующий отзыв</span>
           </button>
         </div>
 
-        <button class="feedback__button button" type="button">Заказать</button>
+        <button class="feedback__button button" type="button">Написать</button>
       </div>
     </section>
 
@@ -189,7 +207,7 @@
           </li>
           <li class="contacts__list-item">
             <span class="contacts__list-type">адрес:</span>
-            <p class="contacts__list-text">г. Санкт-Петербург<br>ул. Большая Конюшенная<br>д.19/8, офис 101</p>
+            <p class="contacts__list-text">г. Санкт-Петербург<br>ул. Большая Конюшенная<br>д. 19/8, офис 101</p>
           </li>
         </ul>
 

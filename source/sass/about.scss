@@ -1,0 +1,98 @@
+.about__container {
+  padding: 30px;
+}
+
+.about__title {
+  margin: 0 0 25px;
+}
+
+.about-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.about-list__item {
+  position: relative;
+
+  margin: 0 0 28px;
+  padding: 55px 0 0 0;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: $black;
+
+  &--flower::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 8px;
+
+    width: 33px;
+    height: 38px;
+
+    background-image: url("../img/flower.svg");
+  }
+
+  &--money::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 47px;
+    height: 27px;
+
+    background-image: url("../img/money.svg");
+  }
+
+  &--like::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 7px;
+
+    width: 34px;
+    height: 27px;
+
+    background-image: url("../img/like.svg");
+  }
+
+  &--ball::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+
+    width: 35px;
+    height: 34px;
+
+    background-image: url("../img/ball.svg");
+  }
+
+  &--rocket::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -5px;
+
+    width: 55px;
+    height: 23px;
+
+    background-image: url("../img/rocket.svg");
+  }
+
+  &--present::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+
+    width: 33px;
+    height: 32px;
+
+    background-image: url("../img/present.svg");
+  }
+}

@@ -13,12 +13,12 @@
     <div class="main-header__container container">
       <a class="main-header__logo logo">
         <picture>
-          <img width="86" height="35" src="#" alt="Логотип магазина Мишка">
+          <img width="86" height="35" src="img/mishka-logo-mobile.svg" alt="Логотип магазина Мишка">
         </picture>
         <span class="visually-hidden">Логотип магазина Мишка</span>
       </a>
 
-      <button class="main-header__burger-button burger-button burger-button--no-js" type="button">
+      <button class="main-header__burger-button burger-button" type="button">
         <span class="visually-hidden">Кнопка открытия меню</span>
       </button>
 
@@ -33,10 +33,20 @@
 
       <ul class="main-header__user-list user-list">
         <li class="user-list__item">
-          <a class="user-list__link user-list__link--search" href="#">Поиск по сайту</a>
+          <a class="user-list__link user-list__link--search" href="#">
+            <svg>
+              <use xlink:href="#search"></use>
+            </svg>
+            Поиск по сайту
+          </a>
         </li>
         <li class="user-list__item">
-          <a class="user-list__link user-list__link--cart" href="#">Корзина: пока пуста</a>
+          <a class="user-list__link user-list__link--cart" href="#">
+            <svg>
+              <use xlink:href="#cart"></use>
+            </svg>
+            Корзина: пока пуста
+          </a>
         </li>
       </ul>
 
