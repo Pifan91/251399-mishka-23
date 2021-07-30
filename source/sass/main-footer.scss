@@ -1,0 +1,19 @@
+.main-footer {
+  background-color: $gray-f1;
+}
+
+.main-footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 30px 30px 30px;
+}
+
+.main-footer__logo {
+  display: none;
+}
+
+.main-footer__social {
+  width: 100%;
+  margin: 0 0 20px;
+}

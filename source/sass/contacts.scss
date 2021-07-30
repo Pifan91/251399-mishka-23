@@ -1,5 +1,5 @@
 .contacts {
-  padding: 34px 0 0;
+  padding: 34px 0 40px;
 }
 
 .contacts__title {
@@ -38,12 +38,24 @@
   &::after {
     content: "";
     position: absolute;
+    right: 0;
+    bottom: 3px;
+    left: 0;
+
+    height: 1px;
+
+    background-color: $text-decoration-green;
   }
 }
 
 .contacts__list-text {
-  margin: 0;
+  margin: 0 0 32px;
 
   font-size: 14px;
   line-height: 30px;
+}
+
+.contacts__button {
+  min-width: 260px;
+  margin: 0 auto;
 }

@@ -1,0 +1,22 @@
+.author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.author__text {
+  margin: 0 27px 0 0;
+
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+  color: $black;
+}
+
+.author__link {
+  display: block;
+  width: 27px;
+  height: 34px;
+
+  background-image: url("../img/logo-htmlacademy.svg");
+}

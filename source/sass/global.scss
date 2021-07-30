@@ -46,7 +46,8 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  max-width: 1150px;
   min-width: 320px;
+  max-width: 1150px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
