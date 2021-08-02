@@ -1,0 +1,14 @@
+.catalog-list {
+  margin: 0;
+  padding: 30px 0;
+
+  list-style: none;
+}
+
+.catalog-list__item {
+  margin: 0 0 30px;
+
+  &:last-child {
+    margin: 0;
+  }
+}

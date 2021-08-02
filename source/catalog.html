@@ -44,7 +44,7 @@
 
   <header class="main-header">
     <div class="main-header__container container">
-      <a class="main-header__logo logo">
+      <a class="main-header__logo logo" href="index.html">
         <picture>
           <img width="86" height="35" src="img/mishka-logo-mobile.svg" alt="Логотип магазина Мишка">
         </picture>
@@ -97,25 +97,27 @@
   </header>
 
   <main>
-    <div class="container">
-      <div class="page-header">
-        <h1 class="page-title">Каталог товаров</h1>
-      </div>
+    <div class="page-header">
+      <h1 class="page-title">Каталог товаров</h1>
+    </div>
 
+    <div class="catalog container">
       <ul class="catalog-list">
         <li class="catalog-list__item">
           <article class="product">
             <picture class="product__photo">
-              <img width="260" height="195" src="#" alt="Зайчик-попрыгайчик">
+              <img width="260" height="195" src="img/photo-1-mobile.jpg" alt="Зайчик-попрыгайчик">
             </picture>
-            <h2 class="product__name">Зайчик-попрыгайчик</h2>
-            <p class="product__parameters">Рост 30 см, вес 200 г</p>
+            <div class="product__info">
+              <h2 class="product__name">Зайчик-попрыгайчик</h2>
+              <p class="product__parameters">Рост 30 см, вес 200 г</p>
 
-            <div class="product__inner">
-              <b class="product__price">1 200 руб.</b>
-              <a class="product__button" href="#">
-                <span class="visually-hidden">В корзину</span>
-              </a>
+              <div class="product__inner">
+                <b class="product__price">1 200 руб.</b>
+                <a class="product__button" href="#">
+                  <span class="visually-hidden">В корзину</span>
+                </a>
+              </div>
             </div>
           </article>
         </li>
@@ -123,16 +125,18 @@
         <li class="catalog-list__item">
           <article class="product">
             <picture class="product__photo">
-              <img width="260" height="195" src="#" alt="Корзинка для белья">
+              <img width="260" height="195" src="img/photo-2-mobile.jpg" alt="Корзинка для белья">
             </picture>
-            <h2 class="product__name">Корзинка для белья</h2>
-            <p class="product__parameters">Диаметр 15 см, высота 10 см</p>
+            <div class="product__info">
+              <h2 class="product__name">Корзинка для белья</h2>
+              <p class="product__parameters">Диаметр 15 см, высота 10 см</p>
 
-            <div class="product__inner">
-              <b class="product__price">690 руб.</b>
-              <a class="product__button" href="#">
-                <span class="visually-hidden">В корзину</span>
-              </a>
+              <div class="product__inner">
+                <b class="product__price">690 руб.</b>
+                <a class="product__button" href="#">
+                  <span class="visually-hidden">В корзину</span>
+                </a>
+              </div>
             </div>
           </article>
         </li>
@@ -140,16 +144,18 @@
         <li class="catalog-list__item">
           <article class="product">
             <picture class="product__photo">
-              <img width="260" height="195" src="#" alt="Большая корзинка для игрушек">
+              <img width="260" height="195" src="img/photo-3-mobile.jpg" alt="Большая корзинка для игрушек">
             </picture>
-            <h2 class="product__name">Большая корзинка для игрушек</h2>
-            <p class="product__parameters">Диаметр 30 см, высота 30 см</p>
+            <div class="product__info">
+              <h2 class="product__name">Большая корзинка для игрушек</h2>
+              <p class="product__parameters">Диаметр 30 см, высота 30 см</p>
 
-            <div class="product__inner">
-              <b class="product__price">1 500 руб.</b>
-              <a class="product__button" href="#">
-                <span class="visually-hidden">В корзину</span>
-              </a>
+              <div class="product__inner">
+                <b class="product__price">1 500 руб.</b>
+                <a class="product__button" href="#">
+                  <span class="visually-hidden">В корзину</span>
+                </a>
+              </div>
             </div>
           </article>
         </li>
@@ -159,8 +165,11 @@
         <h2 class="video__title">Процесс производства</h2>
         <div class="video__content">
           <picture class="video__preview">
-            <img width="260" height="150" src="#" alt="Превью к видео о процессе производства">
+            <img width="260" height="150" src="img/video-mobile.jpg" alt="Превью к видео о процессе производства">
           </picture>
+          <button class="video__play-button">
+            <span class="visually-hidden">Воспроизвести видео</span>
+          </button>
         </div>
         <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a class="video__button button" href="#">Сделать заказ</a>
