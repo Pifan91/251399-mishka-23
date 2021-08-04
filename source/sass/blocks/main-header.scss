@@ -1,0 +1,66 @@
+.main-header {
+  position: relative;
+
+  min-height: 80px;
+  padding: 22px 0 0 0;
+
+  background-color: $white;
+  border-bottom: 1px solid $gray-ec;
+
+  &--no-js {
+    border: none;
+  }
+}
+
+.main-header__logo {
+  margin: 0 auto 21px;
+}
+
+.main-header__burger-button {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.main-header--no-js .main-header__burger-button {
+  display: none;
+}
+
+.main-header__nav-list {
+  position: absolute;
+  top: 100%;
+  z-index: 5;
+
+  display: none;
+  width: 100%;
+}
+
+.main-header--no-js .main-header__nav-list {
+  position: static;
+
+  display: block;
+}
+
+.main-header__user-list {
+  position: absolute;
+  /*Идея в том чтобы потом top вычислять с помощью JS*/
+  top: calc(100% + 158px);
+  z-index: 5;
+
+  display: none;
+  width: 100%;
+}
+
+.main-header--no-js .main-header__user-list {
+  position: static;
+
+  display: block;
+}
+
+.main-header__list {
+  display: none;
+}
+
+.main-header__text {
+  display: none;
+}

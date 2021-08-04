@@ -1,0 +1,17 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: $text-color;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $white;
+  border: 2px solid $text-color;
+}
