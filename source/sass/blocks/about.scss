@@ -2,8 +2,20 @@
   padding: 30px;
 }
 
+@media (min-width: $tablet-width) {
+  .about__container {
+    padding: 50px 50px 25px;
+  }
+}
+
 .about__title {
   margin: 0 0 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .about__title {
+    margin: 0 0 43px;
+  }
 }
 
 .about-list {
@@ -11,6 +23,14 @@
   padding: 0;
 
   list-style: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .about-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .about-list__item {
@@ -94,5 +114,66 @@
     height: 32px;
 
     background-image: url("../img/present.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about-list__item {
+    width: 50%;
+    margin: 0 0 56px;
+
+    font-size: 20px;
+    line-height: 22px;
+
+    &--flower {
+      order: 1;
+    }
+
+    &--money {
+      order: 3;
+
+      &::before {
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &--like {
+      order: 5;
+
+      &::before {
+        top: 7px;
+        left: 7px;
+      }
+    }
+
+    &--ball {
+      order: 2;
+
+      &::before {
+        top: 4px;
+        left: 4px;
+      }
+    }
+
+
+    &--rocket {
+      order: 4;
+
+      &::before {
+        top: 4px;
+        left: -5px;
+      }
+    }
+
+
+    &--present {
+      order: 6;
+
+      &::before {
+        top: 4px;
+        left: 4px;
+      }
+    }
   }
 }

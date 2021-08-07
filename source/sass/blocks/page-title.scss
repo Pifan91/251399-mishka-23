@@ -14,9 +14,22 @@
   &--index {
     min-height: 283px;
 
+    background-color: $gray-f9;
     background-image: url("../img/hero-mobile@2x.jpg");
     background-repeat: no-repeat;
     background-position: 0 -18px;
     background-size: cover;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    font-size: 43px;
+    line-height: 50px;
+
+    &--index {
+      min-height: 626px;
+      padding: 155px 50px 20px;
+    }
   }
 }

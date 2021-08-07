@@ -66,9 +66,10 @@
 
 @media (min-width: $tablet-width) {
   .main-header__nav-list {
-    left: 60px;
+    left: 50px;
 
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     width: auto;
     max-width: 450px;
@@ -120,7 +121,7 @@
   .main-header__text {
     position: absolute;
     top: 100%;
-    right: 60px;
+    right: 50px;
     z-index: 5;
 
     display: block;

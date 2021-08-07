@@ -5,11 +5,25 @@
   list-style: none;
 }
 
+@media (min-width: $tablet-width) {
+  .category {
+    display: flex;
+    max-width: 668px;
+    margin: 0 auto;
+  }
+}
+
 .category__item {
   background-color: $green;
 
   &:nth-child(even) {
     background-color: $green-dark;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .category__item {
+    max-width: 50%;
   }
 }
 
@@ -46,5 +60,24 @@
     height: 60px;
 
     background-image: url("../img/toy.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .category__link {
+    min-height: 119px;
+    padding: 26px 130px 26px 36px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    &--interior::before {
+      top: 29px;
+    }
+
+    &--toy::before {
+      top: 27px;
+      right: 33px;
+    }
   }
 }
