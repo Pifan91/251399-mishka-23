@@ -7,6 +7,22 @@
   background-color: $white;
 }
 
+@media (min-width: $tablet-width) {
+  .nav-list {
+    background-color: $transparent;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .nav-list__item {
+    margin: 0 38px 0 0;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
 .nav-list__link {
   display: block;
   padding: 27px 20px 27px 76px;
@@ -18,4 +34,14 @@
   text-decoration: none;
 
   border-top: 1px solid $gray-ec;
+}
+
+@media (min-width: $tablet-width) {
+  .nav-list__link {
+    padding: 22px 0 0 0;
+
+    font-size: 15px;
+
+    border: none;
+  }
 }
