@@ -13,6 +13,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .category {
+    width: 100%;
+    max-width: 1050px;
+  }
+}
+
 .category__item {
   background-color: $green;
 
@@ -23,6 +30,7 @@
 
 @media (min-width: $tablet-width) {
   .category__item {
+    flex-grow: 1;
     max-width: 50%;
   }
 }

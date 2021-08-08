@@ -8,6 +8,15 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .map {
+    margin: 0;
+
+    grid-column: 2/3;
+    grid-row: 1/4;
+  }
+}
+
 .map__image {
   display: block;
   width: 100%;

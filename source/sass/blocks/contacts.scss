@@ -8,6 +8,22 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .contacts {
+    padding: 65px 0 105px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__container {
+    display: grid;
+    align-items: start;
+    padding: 0 50px 0 225px;
+
+    grid-template-columns: 1fr 527px;
+  }
+}
+
 .contacts__title {
   margin: 0 0 28px;
   padding: 0 30px;
@@ -16,6 +32,15 @@
 @media (min-width: $tablet-width) {
   .contacts__title {
     padding: 27px 130px 20px 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__title {
+    margin: 0 0 35px;
+    padding: 79px 0 0 0;
+
+    grid-column: 1/2;
   }
 }
 
@@ -34,6 +59,16 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .contacts__list {
+    flex-direction: column;
+    margin: 0 0 52px;
+    padding: 0;
+
+    grid-column: 1/2;
+  }
+}
+
 .contacts__list-item {
   display: flex;
   flex-wrap: wrap;
@@ -45,6 +80,17 @@
   .contacts__list-item {
     width: 50%;
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__list-item {
+    width: auto;
+    margin: 0 0 30px;
+
+    &:last-child {
+      margin: 0;
+    }
   }
 }
 
@@ -94,6 +140,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .contacts__list-link::after {
+    bottom: -5px;
+  }
+}
+
 .contacts__list-text {
   margin: 0 0 32px;
 
@@ -115,5 +167,15 @@
 @media (min-width: $tablet-width) {
   .contacts__button {
     min-width: 230px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__button {
+    min-width: auto;
+    max-width: 230px;
+    margin: 0;
+
+    grid-column: 1/2;
   }
 }

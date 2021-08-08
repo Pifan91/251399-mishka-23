@@ -1,3 +1,11 @@
 .page-header {
   position: relative;
+
+  background-color: $gray-f9;
+
+  &--index {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -18px;
+  }
 }

@@ -27,6 +27,12 @@
   .main-footer__logo {
     display: block;
     width: 102px;
+    height: 34px;
+
+    svg {
+      width: 102px;
+      height: 34px;
+    }
   }
 }
 
