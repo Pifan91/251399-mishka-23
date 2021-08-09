@@ -5,15 +5,45 @@
 .main-footer__container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   padding: 28px 30px 30px 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__container {
+    flex-direction: row;
+    align-items: center;
+    min-height: 143px;
+    padding: 28px 50px 30px 50px;
+  }
 }
 
 .main-footer__logo {
   display: none;
 }
 
+@media (min-width: $tablet-width) {
+  .main-footer__logo {
+    display: block;
+    width: 102px;
+    height: 34px;
+
+    svg {
+      width: 102px;
+      height: 34px;
+    }
+  }
+}
+
 .main-footer__social {
   width: 100%;
   margin: 0 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__social {
+    width: auto;
+    margin: 0;
+  }
 }

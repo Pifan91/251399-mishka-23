@@ -6,11 +6,47 @@
   padding: 30px 30px 45px;
 }
 
+@media (min-width: $tablet-width) {
+  .feature__container {
+    display: grid;
+    align-items: start;
+    padding: 52px 50px 75px;
+
+    column-gap: 42px;
+
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feature__container {
+    padding: 70px 50px 100px 225px;
+
+    column-gap: 58px;
+  }
+}
+
 .feature__title {
   position: relative;
 
   margin: 0 0 15px;
   padding: 0 0 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .feature__title {
+    margin: 0 0 38px;
+    padding: 0 150px 0 0;
+
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feature__title {
+    margin: 62px 0 37px;
+  }
 }
 
 .feature__title-tag {
@@ -25,8 +61,47 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet-width) {
+  .feature__title-tag {
+    top: 3px;
+    right: 13px;
+    bottom: auto;
+    left: auto;
+
+    width: 100px;
+
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feature__title-tag {
+    right: auto;
+    left: -143px;
+  }
+}
+
+
 .feature__text {
   margin: 0 0 28px;
+}
+
+@media (min-width: $tablet-width) {
+  .feature__text {
+    margin: 0 0 46px;
+
+    font-size: 17px;
+    line-height: 30px;
+
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feature__text {
+    margin: 0 0 58px;
+  }
 }
 
 .feature__parameters {
@@ -39,6 +114,20 @@
   line-height: 20px;
 
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .feature__parameters {
+    margin: 0 0 52px;
+
+    grid-column: 1 / 2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feature__parameters {
+    margin: 0 0 105px;
+  }
 }
 
 .feature__parameter {
@@ -64,6 +153,29 @@
   width: 260px;
   height: 315px;
   margin: 0 0 25px;
+
+  background-color: $gray-f2;
+}
+
+@media (min-width: $tablet-width) {
+  .feature__foto {
+    width: 334px;
+    height: 404px;
+    margin: 12px 0 0 0;
+
+    grid-column: 2 / -1;
+    grid-row: 2 / 6;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feature__foto {
+    width: 525px;
+    height: 636px;
+    margin: 0;
+
+    grid-row: 1 / 6;
+  }
 }
 
 .feature__price {
@@ -74,4 +186,20 @@
   font-size: 17px;
   line-height: 24px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .feature__price {
+    margin: 0 0 32px;
+
+    font-size: 20px;
+
+    grid-column: 1 / 2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feature__button {
+    grid-column: 1 / 2;
+  }
 }

@@ -5,9 +5,60 @@
   overflow-x: hidden;
 }
 
+@media (min-width: $tablet-width) {
+  .feedback {
+    padding: 78px 0 140px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    padding: 78px 0 190px;
+  }
+}
+
+.feedback__container {
+  overflow-x: hidden;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
 .feedback__title {
   margin: 0 0 15px;
   padding: 0 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__title {
+    order: 1;
+    max-width: 55%;
+    margin: 0 0 40px;
+    padding: 5px 50px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__title {
+    margin: 0 0 35px;
+    padding: 0 50px 0 225px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .feedback__inner {
+    position: relative;
+
+    order: 3;
+    max-width: 1150px;
+  }
 }
 
 .feedback-list {
@@ -24,11 +75,37 @@
   padding: 0 30px;
 }
 
+@media (min-width: $tablet-width) {
+  .feedback-list__item {
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-list__item {
+    padding: 0 50px 0 225px;
+  }
+}
+
 .feedback__text {
   margin: 0 0 33px;
 
   font-size: 15px;
   line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__text {
+    margin: 0 0 60px;
+
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__text {
+    margin: 0 0 45px;
+  }
 }
 
 .feedback__author {
@@ -52,6 +129,19 @@
   text-decoration: none;
 }
 
+@media (min-width: $tablet-width) {
+  .feedback__author-name {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__author-name {
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
+
 .feedback__toggles {
   display: grid;
   width: 260px;
@@ -62,8 +152,22 @@
   grid-template-columns: 1fr 1fr;
 }
 
+@media (min-width: $tablet-width) {
+  .feedback__toggles {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+
+    width: 175px;
+    margin: 0;
+
+    border: none;
+  }
+}
+
 .feedback__toggles-button {
   min-height: 50px;
+  padding: 0;
 
   background-color: $transparent;
   border: none;
@@ -82,7 +186,22 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .feedback__toggles-button--prev {
+    border: none;
+  }
+}
+
 .feedback__button {
   min-width: 260px;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__button {
+    order: 2;
+    min-width: 175px;
+    max-width: 45%;
+    margin: 0 50px 0 0;
+  }
 }

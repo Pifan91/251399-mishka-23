@@ -12,14 +12,57 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .main-header {
+    min-height: 89px;
+    padding: 0 50px;
+
+    border-color: $black-1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__container {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .main-header__logo {
+  width: 86px;
+  height: 35px;
   margin: 0 auto 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__logo {
+    width: 113px;
+    height: 45px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__logo {
+    order: 2;
+    width: 149px;
+    height: 72px;
+  }
 }
 
 .main-header__burger-button {
   position: absolute;
   top: 30px;
   right: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__burger-button {
+    display: none;
+  }
 }
 
 .main-header--no-js .main-header__burger-button {
@@ -33,6 +76,26 @@
 
   display: none;
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__nav-list {
+    left: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: auto;
+    max-width: 450px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__nav-list {
+    position: static;
+
+    order: 1;
+  }
 }
 
 .main-header--no-js .main-header__nav-list {
@@ -51,6 +114,22 @@
   width: 100%;
 }
 
+@media (min-width: $tablet-width) {
+  .main-header__user-list {
+    position: static;
+
+    display: flex;
+    align-items: flex-start;
+    width: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__user-list {
+    order: 3;
+  }
+}
+
 .main-header--no-js .main-header__user-list {
   position: static;
 
@@ -59,8 +138,60 @@
 
 .main-header__list {
   display: none;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-header__list-item {
+  margin: 0 62px 0 0;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.main-header__list-link {
+  display: block;
+  padding: 22px 0 0 0;
+
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: $black;
+  text-decoration: none;
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 5;
+
+    display: flex;
+    align-items: flex-start;
+  }
 }
 
 .main-header__text {
   display: none;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__text {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 5;
+
+    display: block;
+    padding: 22px 0 0 0;
+
+    font-size: 15px;
+    line-height: 24px;
+    color: $text-color;
+  }
 }

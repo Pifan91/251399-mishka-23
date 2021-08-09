@@ -11,6 +11,14 @@
   border-bottom: 1px solid $gray-e5;
 }
 
+@media (min-width: $tablet-width) {
+  .social {
+    padding: 0;
+
+    border: none;
+  }
+}
+
 .social__item {
   margin: 0 40px 0 0;
 
