@@ -4,6 +4,21 @@
   border: 1px solid $gray-ec;
 }
 
+@media (min-width: $tablet-width) {
+  .video {
+    display: grid;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    align-items: start;
+    padding: 0;
+
+    grid-template-columns: 682px 1fr;
+  }
+}
+
 .video__title {
   position: relative;
 
@@ -29,10 +44,63 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .video__title {
+    order: 2;
+    min-height: auto;
+    margin: 0 0 8px;
+    padding: 22px 15px 15px 105px;
+
+    font-size: 20px;
+
+    &::before {
+      top: 18px;
+      left: 41px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__title {
+    margin: 0 0 26px;
+    padding: 96px 60px 0 79px;
+
+    grid-column: 2/3;
+
+    &::before {
+      top: 46px;
+      left: 79px;
+    }
+  }
+}
+
 .video__content {
   position: relative;
 
   margin: 0 0 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .video__content {
+    order: 1;
+    margin: 0 0 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .video__content {
+    order: 1;
+    margin: 0 0 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__content {
+    margin: 0;
+
+    grid-column: 1/2;
+    grid-row: 1/5;
+  }
 }
 
 .video__preview {
@@ -42,10 +110,15 @@
   img {
     display: block;
     width: 100%;
-    height: auto;
-    min-height: 150px;
+    height: 150px;
 
     object-fit: cover;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .video__preview img {
+    height: 455px;
   }
 }
 
@@ -71,6 +144,43 @@
   line-height: 24px;
 }
 
+@media (min-width: $tablet-width) {
+  .video__description {
+    order: 3;
+    margin: 0 0 52px;
+    padding: 0 39px 0 39px;
+
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__description {
+    padding: 0 39px 0 79px;
+
+    grid-column: 2/3;
+  }
+}
+
 .video__button {
   margin: 0 34px;
+}
+
+@media (min-width: $tablet-width) {
+  .video__button {
+    order: 4;
+    margin: 0 41px;
+
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__button {
+    max-width: 230px;
+    margin: 0 0 0 80px;
+
+    grid-column: 2/3;
+  }
 }
