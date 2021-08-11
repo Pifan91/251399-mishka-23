@@ -5,7 +5,7 @@
 
 @media (min-width: $tablet-width) {
   .order-form {
-    padding: 66px 0 55px 0;
+    padding: 66px 0 0 0;
   }
 }
 
@@ -77,8 +77,16 @@
     margin: 0;
     padding: 27px 0 50px 220px;
 
+    &--name {
+      padding: 53px 50px 50px 217px;
+    }
+
     &--checkbox {
       padding: 51px 25px 25px 217px;
+    }
+
+    &--no-padding {
+      padding: 52px 50px 50px 50px;
     }
   }
 }
@@ -121,7 +129,8 @@
     }
   }
 
-  .order-form__fieldset--checkbox .order-form__legend {
+  .order-form__fieldset--checkbox .order-form__legend,
+  .order-form__fieldset--name .order-form__legend {
     top: 68px;
   }
 }
@@ -229,8 +238,8 @@
     }
 
     &::after {
-      top: 14px;
-      left: 14px;
+      top: 15px;
+      left: 15px;
 
       width: 20px;
       height: 20px;
@@ -293,6 +302,28 @@
   color: $black;
 }
 
+@media (min-width: $tablet-width) {
+  .order-form__label {
+    margin: 0 25px 0 0;
+    padding: 15px 0 0 0;
+
+    font-size: 19px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .order-form__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 0 26px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
 .order-form__custom-label {
   position: relative;
 
@@ -324,6 +355,17 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .order-form__custom-label {
+    margin: 0;
+    padding: 15px 0 0 0;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
 .order-form__text-field {
   display: block;
   width: 100%;
@@ -347,6 +389,14 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .order-form__text-field {
+    padding: 11px 17px;
+
+    font-size: 19px;
+  }
+}
+
 .order-form__text-field--tel {
   margin: 0 0 37px;
   padding: 12px 45px 15px 0;
@@ -355,6 +405,16 @@
 .order-form__text-field--email {
   margin: 0 0 37px;
   padding: 12px 45px 15px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form__text-field--tel,
+  .order-form__text-field--email {
+    max-width: 500px;
+    padding: 11px 45px 11px 17px;
+
+    background-color: $gray-f1;
+  }
 }
 
 .order-form__comment-field {
@@ -375,6 +435,15 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .order-form__comment-field {
+    max-width: 500px;
+    margin: 0 0 25px;
+
+    font-size: 19px;
+  }
+}
+
 .order-form__remark {
   margin: 0 0 30px;
 
@@ -382,6 +451,26 @@
   line-height: 16px;
 }
 
+@media (min-width: $tablet-width) {
+  .order-form__remark {
+    order: 2;
+    margin: 0;
+    padding: 11px 0 0 0;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
 .order-form__button {
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form__button {
+    order: 1;
+    max-width: 230px;
+
+    font-size: 17px;
+  }
 }
