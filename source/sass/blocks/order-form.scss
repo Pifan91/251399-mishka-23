@@ -9,6 +9,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .order-form {
+    padding: 98px 0 0 0;
+  }
+}
+
 .order-form__text {
   margin: 0 0 30px;
 
@@ -22,6 +28,12 @@
 
     font-size: 17px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__text {
+    padding: 0 225px;
   }
 }
 
@@ -63,7 +75,11 @@
     padding: 43px 0 0 0;
   }
 
-  &--no-padding {
+  &--contacts {
+    padding: 0;
+  }
+
+  &--comment {
     padding: 0;
   }
 
@@ -77,16 +93,43 @@
     margin: 0;
     padding: 27px 0 50px 220px;
 
-    &--name {
-      padding: 53px 50px 50px 217px;
-    }
-
     &--checkbox {
       padding: 51px 25px 25px 217px;
     }
 
-    &--no-padding {
+    &--name {
+      padding: 53px 50px 50px 217px;
+    }
+
+    &--contacts {
       padding: 52px 50px 50px 50px;
+    }
+
+    &--comment {
+      padding: 52px 50px 50px 50px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__fieldset {
+    margin: 0;
+    padding: 27px 0 50px 227px;
+
+    &--checkbox {
+      padding: 48px 130px 24px 225px;
+    }
+
+    &--name {
+      padding: 53px 225px 50px 227px;
+    }
+
+    &--contacts {
+      padding: 51px 225px 50px 111px;
+    }
+
+    &--comment {
+      padding: 51px 225px 50px 225px;
     }
   }
 }
@@ -135,6 +178,13 @@
   }
 }
 
+
+@media (min-width: $desktop-width) {
+  .order-form__legend {
+    left: 111px;
+  }
+}
+
 .order-form__list {
   margin: 0;
   padding: 0;
@@ -178,6 +228,13 @@
 
   .order-form__list--checkbox .order-form__list-item {
     width: 50%;
+    margin: 0 0 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__list--checkbox .order-form__list-item {
+    width: 33%;
     margin: 0 0 26px;
   }
 }
@@ -279,7 +336,7 @@
 
 @media (min-width: $tablet-width) {
   .order-form__checkbox {
-    min-height: 50px;
+    min-height: 52px;
     padding: 0 0 0 80px;
 
     font-size: 19px;
@@ -319,7 +376,7 @@
   }
 }
 
-.order-form__wrapper--m-0 {
+.order-form__wrapper--comment {
   margin: 0;
 }
 
@@ -374,10 +431,17 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .order-form__custom-label--comment {
+    position: absolute;
+    top: 54px;
+    left: 111px;
+  }
+}
+
 .order-form__text-field {
   display: block;
   width: 100%;
-  //margin: 0 0 22px;
   padding: 15px 0;
 
   font-weight: 400;
@@ -391,10 +455,6 @@
   &::placeholder {
     color: $black-3;
   }
-
-  //&:last-child {
-  //  margin: 0;
-  //}
 }
 
 @media (min-width: $tablet-width) {
@@ -425,6 +485,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .order-form__text-field--tel,
+  .order-form__text-field--email {
+    max-width: 700px;
+  }
+}
+
 .order-form__comment-field {
   display: block;
   width: 100%;
@@ -449,6 +516,13 @@
     margin: 0 0 25px;
 
     font-size: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__comment-field {
+    max-width: 700px;
+    margin: 0 0 23px;
   }
 }
 
