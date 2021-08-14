@@ -1,11 +1,19 @@
 .page-header {
   position: relative;
 
-  background-color: $gray-f9;
+  background-color: $gray-f1;
 
   &--index {
+    background-color: $gray-f9;
     background-image: url("../img/hero-mobile@2x.jpg");
     background-repeat: no-repeat;
     background-position: center -18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    margin: 0 -9999px;
+    padding: 0 9999px;
   }
 }
