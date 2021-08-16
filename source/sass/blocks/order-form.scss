@@ -62,18 +62,6 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .order-form__fieldset-item {
-    margin: 0 -9999px;
-    padding: 0 9999px;
-
-    &:last-child {
-      margin: 0 -9999px;
-      padding: 0 9999px;
-    }
-  }
-}
-
 .order-form__fieldset {
   position: relative;
 

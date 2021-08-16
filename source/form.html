@@ -97,17 +97,22 @@
   </header>
 
   <main>
-    <div class="container">
-      <div class="page-header">
+    <div class="page-header">
+      <div class="container">
         <h1 class="page-title">Вязание на заказ</h1>
       </div>
+    </div>
 
-      <form class="order-form" action="https://echo.htmlacademy.ru">
-        <h2 class="visually-hidden">Форма заказа</h2>
+    <form class="order-form" action="https://echo.htmlacademy.ru">
+      <h2 class="visually-hidden">Форма заказа</h2>
 
+      <div class="container">
         <p class="order-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <ul class="order-form__fieldset-list">
-          <li class="order-form__fieldset-item">
+      </div>
+
+      <ul class="order-form__fieldset-list">
+        <li class="order-form__fieldset-item">
+          <div class="container">
             <fieldset class="order-form__fieldset">
               <legend class="order-form__legend">Тип</legend>
 
@@ -123,9 +128,11 @@
                 </li>
               </ul>
             </fieldset>
-          </li>
+          </div>
+        </li>
 
-          <li class="order-form__fieldset-item">
+        <li class="order-form__fieldset-item">
+          <div class="container">
             <fieldset class="order-form__fieldset order-form__fieldset--checkbox">
               <legend class="order-form__legend">Цвет</legend>
 
@@ -161,9 +168,11 @@
                 </li>
               </ul>
             </fieldset>
-          </li>
+          </div>
+        </li>
 
-          <li class="order-form__fieldset-item">
+        <li class="order-form__fieldset-item">
+          <div class="container">
             <fieldset class="order-form__fieldset order-form__fieldset--name">
               <legend class="order-form__legend">ФИО</legend>
               <div class="order-form__wrapper">
@@ -181,9 +190,11 @@
                 <input class="order-form__text-field" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
               </div>
             </fieldset>
-          </li>
+          </div>
+        </li>
 
-          <li class="order-form__fieldset-item">
+        <li class="order-form__fieldset-item">
+          <div class="container">
             <fieldset class="order-form__fieldset order-form__fieldset--contacts">
               <legend class="visually-hidden">Электронная почта и телефон</legend>
 
@@ -197,9 +208,11 @@
                 <input class="order-form__text-field order-form__text-field--email" type="email" name="email" id="email" placeholder="Ваш Email*">
               </div>
             </fieldset>
-          </li>
+          </div>
+        </li>
 
-          <li class="order-form__fieldset-item">
+        <li class="order-form__fieldset-item">
+          <div class="container">
             <fieldset class="order-form__fieldset order-form__fieldset--comment">
               <legend class="visually-hidden">Пожелания к заказу</legend>
 
@@ -213,10 +226,11 @@
                 <button class="order-form__button button" type="submit">Отправить заказ</button>
               </div>
             </fieldset>
-          </li>
-        </ul>
-      </form>
-    </div>
+          </div>
+        </li>
+      </ul>
+    </form>
+
   </main>
 
   <footer class="main-footer">

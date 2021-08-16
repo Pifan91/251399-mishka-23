@@ -31,7 +31,29 @@
 
 @media (min-width: $tablet-width) {
   .contacts__title {
+    position: relative;
+
     padding: 27px 130px 20px 50px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      right: 53px;
+
+      width: 47px;
+      height: 81px;
+
+      background-image: url("../../img/flag.svg");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__title::after {
+    top: 62px;
+    right: auto;
+    left: -112px;
   }
 }
 
