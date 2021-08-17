@@ -15,13 +15,17 @@
   .page-header::after {
     content: "";
     position: absolute;
-    bottom: -12px;
+    bottom: -1px;
 
     width: 100%;
     height: 24px;
 
     background-image: url("../../img/zigzag-fill-desktop.svg");
     background-repeat: repeat-x;
+  }
+
+  .page-header--index::after {
+    bottom: -12px;
   }
 }
 
