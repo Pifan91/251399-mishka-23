@@ -189,6 +189,14 @@
     grid-column: 2 / -1;
     grid-row: 2 / 6;
   }
+
+  .feature picture {
+    width: 334px;
+    height: 404px;
+
+    grid-column: 2 / -1;
+    grid-row: 2 / 6;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -196,6 +204,13 @@
     width: 525px;
     height: 636px;
     margin: 0;
+
+    grid-row: 1 / 6;
+  }
+
+  .feature picture {
+    width: 525px;
+    height: 636px;
 
     grid-row: 1 / 6;
   }

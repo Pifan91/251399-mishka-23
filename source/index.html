@@ -136,8 +136,10 @@
           </tr>
         </table>
 
-        <picture class="feature__foto">
-          <img width="260" height="315" src="img/triple-set-mobile.png" alt="Фотография изделия">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <img class="feature__foto" width="260" height="315" src="img/triple-set-mobile.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Фотография изделия">
         </picture>
 
         <p class="feature__price">Цена: 990 руб.</p>
@@ -236,7 +238,9 @@
 
         <div class="map">
           <picture class="map__image">
-            <img width="320" height="455" src="img/map-mobile@1x.jpg" alt="Магазин на карте">
+            <source media="(min-width: 1150px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img width="320" height="455" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Магазин на карте">
           </picture>
         </div>
 
