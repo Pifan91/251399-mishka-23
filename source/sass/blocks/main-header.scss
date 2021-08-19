@@ -33,6 +33,7 @@
 }
 
 .main-header__logo {
+  display: block;
   width: 86px;
   height: 35px;
   margin: 0 auto 21px;
@@ -43,6 +44,11 @@
     width: 113px;
     height: 45px;
     margin: 0;
+
+    img {
+      width: 113px;
+      height: 45px;
+    }
   }
 }
 
@@ -51,6 +57,12 @@
     order: 2;
     width: 149px;
     height: 72px;
+    margin: 0 64px 0 0;
+
+    img {
+      width: 149px;
+      height: 72px;
+    }
   }
 }
 

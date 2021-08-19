@@ -44,8 +44,10 @@
 
   <header class="main-header">
     <div class="main-header__container container">
-      <a class="main-header__logo logo" href="index.html">
+      <a class="main-header__logo" href="index.html">
         <picture>
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
           <img width="86" height="35" src="img/mishka-logo-mobile.svg" alt="Логотип магазина Мишка">
         </picture>
         <span class="visually-hidden">Логотип магазина Мишка</span>
@@ -107,8 +109,10 @@
       <ul class="catalog-list">
         <li class="catalog-list__item">
           <article class="product">
-            <picture class="product__photo">
-              <img width="260" height="195" src="img/photo-1-mobile.jpg" alt="Зайчик-попрыгайчик">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img class="product__photo" width="260" height="195" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
             </picture>
             <div class="product__info">
               <h2 class="product__name">Зайчик-попрыгайчик</h2>
@@ -126,8 +130,10 @@
 
         <li class="catalog-list__item">
           <article class="product">
-            <picture class="product__photo">
-              <img width="260" height="195" src="img/photo-2-mobile.jpg" alt="Корзинка для белья">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img class="product__photo" width="260" height="195" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Корзинка для белья">
             </picture>
             <div class="product__info">
               <h2 class="product__name">Корзинка для белья</h2>
@@ -145,8 +151,10 @@
 
         <li class="catalog-list__item">
           <article class="product">
-            <picture class="product__photo">
-              <img width="260" height="195" src="img/photo-3-mobile.jpg" alt="Большая корзинка для игрушек">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img class="product__photo" width="260" height="195" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
             </picture>
             <div class="product__info">
               <h2 class="product__name">Большая корзинка для игрушек</h2>
@@ -166,9 +174,12 @@
       <section class="video">
         <h2 class="video__title">Процесс производства</h2>
         <div class="video__content">
-          <picture class="video__preview">
-            <img width="260" height="150" src="img/video-mobile.jpg" alt="Превью к видео о процессе производства">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="video__preview" width="260" height="150" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Превью к видео о процессе производства">
           </picture>
+
           <button class="video__play-button">
             <span class="visually-hidden">Воспроизвести видео</span>
           </button>
@@ -181,7 +192,7 @@
 
   <footer class="main-footer">
     <div class="main-footer__container container">
-      <a class="main-footer__logo logo">
+      <a class="main-footer__logo">
         <svg>
           <use xlink:href="#logo-footer"></use>
         </svg>

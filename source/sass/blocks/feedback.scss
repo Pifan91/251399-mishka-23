@@ -40,9 +40,13 @@
     align-items: flex-start;
     padding: 78px 0 140px;
 
-    background-image: url("../../img/feedback-background.jpg");
+    background-image: url("../img/review.jpg");
     background-repeat: no-repeat;
     background-size: 350px 457px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 }
 
