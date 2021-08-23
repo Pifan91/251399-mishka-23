@@ -1,0 +1,57 @@
+.sizes-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.sizes-list__item {
+  margin: 0 7px 0 0;
+
+  &:nth-child(3n) {
+    margin: 0;
+  }
+}
+
+.sizes-list__button {
+  min-width: 82px;
+  padding: 11px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 26px;
+  color: $text-color;
+  text-transform: uppercase;
+
+  background-color: $transparent;
+  border: 2px solid $black-1;
+
+  &:hover {
+    border-color: $black-3;
+  }
+
+  &:active {
+    border-color: $green;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .sizes-list__button {
+    min-width: 112px;
+  }
+}
+
+.sizes-list__button--active {
+  border-color: $green;
+
+  &:hover {
+    border-color: $green;
+  }
+
+  &:active {
+    border-color: $green;
+  }
+}

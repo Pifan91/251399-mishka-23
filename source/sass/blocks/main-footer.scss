@@ -21,6 +21,17 @@
 
 .main-footer__logo {
   display: none;
+
+
+  &:hover {
+    fill: $green-darken;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    fill: $green-darken;
+  }
 }
 
 @media (min-width: $tablet-width) {

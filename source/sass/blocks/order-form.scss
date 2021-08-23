@@ -279,6 +279,14 @@
     background-color: $text-decoration-green;
     border-radius: 50%;
   }
+
+  &:hover::before {
+    border-color: $text-decoration-green;
+  }
+
+  &:active::before {
+    border-color: $black-3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -345,6 +353,14 @@
 
     background-image: url("../../img/check.svg");
     background-repeat: no-repeat;
+  }
+
+  &:hover::before {
+    border-color: $text-decoration-green;
+  }
+
+  &:active::before {
+    border-color: $black-3;
   }
 }
 
@@ -538,9 +554,30 @@
 
   border: none;
   border-bottom: 2px solid $black;
+  outline: none;
 
   &::placeholder {
     color: $black-3;
+  }
+
+  &:hover {
+    border-color: $text-decoration-green;
+  }
+
+  &:focus {
+    border-color: $text-decoration-green;
+  }
+
+  &:hover + svg {
+    opacity: 1;
+
+    fill: $text-decoration-green;
+  }
+
+  &:focus + svg {
+    opacity: 1;
+
+    fill: $text-decoration-green;
   }
 }
 
@@ -591,9 +628,18 @@
   color: $black;
 
   border: 2px solid $text-color;
+  outline: none;
 
   &::placeholder {
     color: $black-3;
+  }
+
+  &:hover {
+    border-color: $text-decoration-green;
+  }
+
+  &:focus {
+    border-color: $text-decoration-green;
   }
 }
 
