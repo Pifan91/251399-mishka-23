@@ -2,6 +2,14 @@
   padding: 0 0 33px;
 
   border: 1px solid $gray-ec;
+
+  &:hover {
+    box-shadow: 0 6px 10px $black-1;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px $black-1;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -129,6 +137,16 @@
   background-image: url("../img/play.svg");
   border: none;
   transform: translate(-50%, -50%);
+  cursor: pointer;
+
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .video__description {

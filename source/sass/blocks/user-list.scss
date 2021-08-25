@@ -27,6 +27,14 @@
   text-decoration: none;
 
   border-top: 1px solid $gray-ec;
+
+  &:hover {
+    color: $black-6;
+  }
+
+  &:active {
+    color: $black-3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -76,4 +84,22 @@
   .user-list__link--cart {
     padding: 32px 0 32px 83px;
   }
+}
+
+.user-list__link-icon {
+  opacity: 0.2;
+
+  fill: $black;
+}
+
+.user-list__link:hover .user-list__link-icon {
+  opacity: 1;
+
+  fill: $green;
+}
+
+.user-list__link:active .user-list__link-icon {
+  opacity: 0.3;
+
+  fill: $green;
 }

@@ -32,6 +32,10 @@
   .category__item {
     flex-grow: 1;
     max-width: 50%;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
   }
 }
 
@@ -57,6 +61,7 @@
     height: 62px;
 
     background-image: url("../img/interior.svg");
+    opacity: 0.5;
   }
 
   &--toy::before {
@@ -68,6 +73,15 @@
     height: 60px;
 
     background-image: url("../img/toy.svg");
+    opacity: 0.5;
+  }
+
+  &:hover::before {
+    opacity: 0.7;
+  }
+
+  &:active::before {
+    opacity: 0.3;
   }
 }
 

@@ -14,6 +14,19 @@
 
   background-color: $white;
   border: 2px solid $text-color;
+  cursor: pointer;
+
+  &:hover {
+    color: $white;
+
+    background-color: $text-color;
+  }
+
+  &:active {
+    color: $white-3;
+
+    background-color: $text-color;
+  }
 }
 
 @media (min-width: $tablet-width) {

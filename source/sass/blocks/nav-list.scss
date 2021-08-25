@@ -48,6 +48,14 @@
   text-decoration: none;
 
   border-top: 1px solid $gray-ec;
+
+  &:hover {
+    color: $black-6;
+  }
+
+  &:active {
+    color: $black-3;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -18,5 +18,22 @@
   width: 27px;
   height: 34px;
 
-  background-image: url("../img/logo-htmlacademy.svg");
+  fill: $green;
+}
+
+.author__icon {
+  width: 27px;
+  height: 34px;
+
+  fill: $green;
+
+  &:hover {
+    fill: $green-darken;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    fill: $green-darken;
+  }
 }
