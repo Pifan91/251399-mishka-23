@@ -8,6 +8,7 @@
 @media (min-width: $tablet-width) {
   .category {
     display: flex;
+    flex-wrap: wrap;
     max-width: 668px;
     margin: 0 auto;
   }

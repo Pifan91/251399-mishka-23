@@ -6,10 +6,6 @@
 
   background-color: $white;
   border-bottom: 1px solid $gray-ec;
-
-  &--no-js {
-    border: none;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -88,10 +84,6 @@
   }
 }
 
-.main-header--no-js .main-header__burger-button {
-  display: none;
-}
-
 .main-header__nav-list {
   position: absolute;
   top: 100%;
@@ -121,12 +113,6 @@
   }
 }
 
-.main-header--no-js .main-header__nav-list {
-  position: static;
-
-  display: block;
-}
-
 .main-header__user-list {
   position: absolute;
   /*Идея в том чтобы потом top вычислять с помощью JS*/
@@ -151,12 +137,6 @@
   .main-header__user-list {
     order: 3;
   }
-}
-
-.main-header--no-js .main-header__user-list {
-  position: static;
-
-  display: block;
 }
 
 .main-header__list {
@@ -224,5 +204,27 @@
     font-size: 15px;
     line-height: 24px;
     color: $text-color;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .main-header--no-js {
+    border: none;
+  }
+
+  .main-header--no-js .main-header__burger-button {
+    display: none;
+  }
+
+  .main-header--no-js .main-header__nav-list {
+    position: static;
+
+    display: block;
+  }
+
+  .main-header--no-js .main-header__user-list {
+    position: static;
+
+    display: block;
   }
 }
