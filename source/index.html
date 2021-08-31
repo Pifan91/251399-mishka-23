@@ -10,12 +10,15 @@
   <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
 
+  <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="/fonts/opensans.woff2" as="font">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="main-header main-header--no-js">
     <div class="main-header__container container">
       <a class="main-header__logo">
         <picture>
@@ -215,7 +218,7 @@
           </li>
         </ul>
 
-        <div class="map">
+        <div class="map" id="map">
           <picture class="map__image">
             <source media="(min-width: 1150px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
@@ -293,6 +296,9 @@
 
     <button class="button popup__button">Добавить</button>
   </div>
+
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=4877cf9d-cb3b-4f90-a40c-12101cd060a2" type="text/javascript"></script>
+  <script src="/js/script.min.js"></script>
 </body>
 
 </html>
