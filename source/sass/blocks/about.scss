@@ -24,7 +24,7 @@
   }
 }
 
-.about-list {
+.about__list {
   margin: 0;
   padding: 0;
 
@@ -33,13 +33,13 @@
 
 
 @media (min-width: $tablet-width) {
-  .about-list {
+  .about__list {
     display: flex;
     flex-wrap: wrap;
   }
 }
 
-.about-list__item {
+.about__list-item {
   position: relative;
 
   margin: 0 0 28px;
@@ -124,7 +124,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .about-list__item {
+  .about__list-item {
     width: 50%;
     margin: 0 0 56px;
 

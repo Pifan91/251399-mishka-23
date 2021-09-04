@@ -86,11 +86,15 @@
 
 .main-header__nav-list {
   position: absolute;
-  top: 100%;
+  top: calc(100% + 1px);
   z-index: 5;
 
   display: none;
   width: 100%;
+}
+
+.main-header__nav-list--open {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -121,6 +125,10 @@
 
   display: none;
   width: 100%;
+}
+
+.main-header__user-list--open {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
