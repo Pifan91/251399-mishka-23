@@ -9,6 +9,7 @@
 }
 
 .sizes-list__item {
+  flex-grow: 1;
   margin: 0 7px 0 0;
 
   &:nth-child(3n) {
@@ -16,7 +17,10 @@
   }
 }
 
-.sizes-list__button {
+.sizes-list__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 82px;
   padding: 11px;
 
@@ -44,7 +48,7 @@
   }
 }
 
-.sizes-list__button--active {
+.sizes-list__input:checked + .sizes-list__label {
   border-color: $green;
 
   &:hover {
