@@ -248,19 +248,24 @@
   <div class="popup">
     <h2 class="popup__title">Добавить в корзину</h2>
     <p class="popup__text">Выберите размер:</p>
-    <ul class="popup__sizes sizes-list">
-      <li class="sizes-list__item">
-        <button class="sizes-list__button sizes-list__button--active">s</button>
-      </li>
-      <li class="sizes-list__item">
-        <button class="sizes-list__button">m</button>
-      </li>
-      <li class="sizes-list__item">
-        <button class="sizes-list__button">l</button>
-      </li>
-    </ul>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <ul class="popup__sizes sizes-list">
+        <li class="sizes-list__item">
+          <input class="sizes-list__input visually-hidden" type="radio" name="size" value="size-s" id="size-s" checked>
+          <label class="sizes-list__label" for="size-s">s</label>
+        </li>
+        <li class="sizes-list__item">
+          <input class="sizes-list__input visually-hidden" type="radio" name="size" value="size-m" id="size-m">
+          <label class="sizes-list__label" for="size-m">m</label>
+        </li>
+        <li class="sizes-list__item">
+          <input class="sizes-list__input visually-hidden" type="radio" name="size" value="size-l" id="size-l">
+          <label class="sizes-list__label" for="size-l">l</label>
+        </li>
+      </ul>
 
-    <button class="button popup__button">Добавить</button>
+      <button class="button popup__button" type="submit">Добавить</button>
+    </form>
   </div>
 </body>
 

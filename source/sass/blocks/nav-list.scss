@@ -13,8 +13,10 @@
   }
 }
 
-.nav-list__item:first-child .nav-list__link {
-  border: none;
+@media (max-width: $tablet-width) {
+  .nav-list__item:first-child .nav-list__link {
+    border: none;
+  }
 }
 
 @media (min-width: $tablet-width) {

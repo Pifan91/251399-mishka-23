@@ -194,13 +194,13 @@
 }
 
 .contacts__button {
-  min-width: 260px;
+  max-width: 260px;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .contacts__button {
-    min-width: 230px;
+    max-width: 230px;
   }
 }
 
