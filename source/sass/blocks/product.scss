@@ -57,7 +57,7 @@
 }
 
 .product__info {
-  padding: 28px 28px 25px 28px;
+  padding: 27px 28px 25px 28px;
 
   border: 1px solid $gray-ec;
 }
@@ -78,7 +78,8 @@
 }
 
 .product__name {
-  margin: 0 0 4px;
+  display: block;
+  margin: 0 0 5px;
   padding: 0;
 
   font-weight: 700;
@@ -98,6 +99,8 @@
 
 @media (min-width: $tablet-width) {
   .product__name {
+    padding: 0 25px 0 0;
+
     font-size: 20px;
   }
 }
