@@ -4,7 +4,6 @@
 @import "global.scss";
 /*Blocks*/
 @import "blocks/button.scss";
-@import "blocks/main-header.scss";
 @import "blocks/burger-button.scss";
 @import "blocks/nav-list.scss";
 @import "blocks/user-list.scss";
@@ -19,7 +18,6 @@
 @import "blocks/map.scss";
 @import "blocks/social.scss";
 @import "blocks/author.scss";
-@import "blocks/main-footer.scss";
 @import "blocks/catalog.scss";
 @import "blocks/catalog-list.scss";
 @import "blocks/product.scss";
@@ -27,3 +25,5 @@
 @import "blocks/order-form.scss";
 @import "blocks/sizes-list.scss";
 @import "blocks/popup.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-footer.scss";

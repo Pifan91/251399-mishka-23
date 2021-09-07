@@ -20,29 +20,29 @@
 
 @media (min-width: $tablet-width) {
   .page-title {
-    min-height: 226px;
-    padding: 100px 50px 20px;
+    min-height: 190px;
+    padding: 55px 50px 20px;
 
     font-size: 43px;
     line-height: 50px;
 
     &--index {
-      min-height: 626px;
-      padding: 155px 50px 20px;
+      min-height: 580px;
+      padding: 109px 50px 20px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-title {
-    min-height: 272px;
+    min-height: 225px;
 
     font-size: 53px;
     line-height: 57px;
 
     &--index {
-      min-height: 626px;
-      padding: 155px 50px 20px;
+      min-height: 580px;
+      padding: 110px 50px 20px;
     }
   }
 }

@@ -24,8 +24,18 @@
 .category__item {
   background-color: $green;
 
+  &:hover,
+  &:active {
+    background-color: $green-light;
+  }
+
   &:nth-child(even) {
     background-color: $green-dark;
+
+    &:hover,
+    &:active {
+      background-color: $green-darken;
+    }
   }
 }
 
