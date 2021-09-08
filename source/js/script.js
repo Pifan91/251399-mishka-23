@@ -4,6 +4,13 @@ const headerBurgerButton = document.querySelector('.main-header__burger-button')
 const headerNavList = document.querySelector('.main-header__nav-list');
 const headerUserList = document.querySelector('.main-header__user-list');
 
+const popupOpenButton = document.querySelector('.feature__button');
+const popup = document.querySelector('.popup');
+
+function closePopup() {
+  popup.classList.remove('popup--show');
+}
+
 mainHeader.classList.remove('main-header--no-js');
 mapImage.remove();
 
@@ -12,6 +19,12 @@ headerBurgerButton.addEventListener('click', function () {
   headerNavList.classList.toggle('main-header__nav-list--open');
   headerUserList.classList.toggle('main-header__user-list--open');
   headerUserList.style.top = mainHeader.offsetHeight + headerNavList.offsetHeight + 'px';
+});
+
+popupOpenButton.addEventListener('click', function () {
+  popup.classList.add('popup--show');
+
+  setTimeout(closePopup, 10000);
 });
 
 if (typeof ymaps === 'object') {

@@ -253,6 +253,8 @@
   vertical-align: middle;
   color: $black;
 
+  cursor: pointer;
+
   &::before {
     content: "";
     position: absolute;
@@ -310,6 +312,10 @@
       height: 20px;
     }
   }
+}
+
+.order-form__radio-input:focus + .order-form__radio::before {
+  border-color: $text-decoration-green;
 }
 
 .order-form__radio-input:checked + .order-form__radio::after {
@@ -389,6 +395,10 @@
 
 .order-form__checkbox:checked + .order-form__checkbox-label::after {
   display: block;
+}
+
+.order-form__checkbox:focus + .order-form__checkbox-label::before {
+  border-color: $text-decoration-green;
 }
 
 .order-form__label {
