@@ -14,14 +14,16 @@ function closePopup() {
 mainHeader.classList.remove('main-header--no-js');
 mapImage.remove();
 
-headerBurgerButton.addEventListener('click', function () {
+headerBurgerButton.addEventListener('click', function (evt) {
+  evt.preventDefault();
   headerBurgerButton.classList.toggle('burger-button--open');
   headerNavList.classList.toggle('main-header__nav-list--open');
   headerUserList.classList.toggle('main-header__user-list--open');
   headerUserList.style.top = mainHeader.offsetHeight + headerNavList.offsetHeight + 'px';
 });
 
-popupOpenButton.addEventListener('click', function () {
+popupOpenButton.addEventListener('click', function (evt) {
+  evt.preventDefault();
   popup.classList.add('popup--show');
 
   setTimeout(closePopup, 10000);
